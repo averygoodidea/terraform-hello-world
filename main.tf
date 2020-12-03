@@ -9,16 +9,9 @@ terraform {
       bucket = "averygoodwebapp-com-tf"
       key = "terraform.tfstate"
       region = "us-east-1"
+      profile = "AverySmithProAdministrator"
     }
 }
-
-# terraform {
-#   backend "s3" {
-#     bucket = "averygoodwebapp-com-tf"
-#     key = "terraform.tfstate"
-#     region = "us-east-1"
-#   }
-# }
 
 provider "aws" {
   region                  = var.region
