@@ -9,14 +9,14 @@ terraform {
       bucket = "averygoodwebapp-com-tf"
       key = "terraform.tfstate"
       region = "us-east-1"
-      profile = "AverySmithProAdministrator"
+      profile = "default"
     }
 }
 
 provider "aws" {
   region                  = var.region
   shared_credentials_file = "~/.aws/credentials"
-  profile                 = "AverySmithProAdministrator"
+  profile                 = "default"
 }
 
 resource "aws_s3_bucket" "averygoodbucket_test" {
